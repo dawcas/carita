@@ -3,6 +3,9 @@
     height: 100px;
     position: relative;
     width: 100px;
+}
+
+.head:hover {
     border-radius: 50%;
 }
 
