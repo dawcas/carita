@@ -12,5 +12,17 @@
                 <div class='face'> :| </div>
             </div>
         </div>
+        <script>
+            var cara = document.getElementsByClassName('face')[0];
+            var cabeza = document.getElementsByClassName('head')[0];
+            
+            cabeza.onclick = function(){
+                cara.innerHTML = cara.innerHTML.replace(':', '.');
+            };
+            
+            cabeza.onmouseout = function(){
+                cara.innerHTML = cara.innerHTML.replace('.', ':');
+            };
+        </script>
     </body>
 </html>
