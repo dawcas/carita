@@ -1,22 +1,23 @@
 .head {
     background: #fc0;
     height: 100px;
-    position: fixed;
+    position: absolute;
     width: 100px;
-    margin: 0 auto;
+    left: 46%;
+    top: 40%;
     align-items: center;
-    flex: auto;
-    
+    justify-content: center;
+    border-radius: 200%;
+
+
 }
 
 .face {
-    
     font-family: 'courier new', serif;
     font-size: 2.5em;
     font-weight: bold;
-    left: 50%;
-    position: fixed;
+    left: 54%;
+    position: absolute;
     top: 50%;
     transform: translate(-50%, -60%) rotate(90deg);
-   
 }
