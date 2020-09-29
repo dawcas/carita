@@ -1,8 +1,13 @@
 .head {
     background: #fc0;
     height: 100px;
-    position: relative;
+    position: absolute;
     width: 100px;
+    left: 46%;
+    top: 40%;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .head:hover {
@@ -13,7 +18,7 @@
     font-family: 'courier new', serif;
     font-size: 2.5em;
     font-weight: bold;
-    left: 50%;
+    left: 54%;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -60%) rotate(90deg);
