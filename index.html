@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-        <title>sin título</title>
+        <title>Cara sonriendo</title>
         <link rel='stylesheet' href='css/main.css'>
     </head>
     <body>
@@ -15,13 +15,18 @@
         <script>
             var cara = document.getElementsByClassName('face')[0];
             var cabeza = document.getElementsByClassName('head')[0];
-            
+
             cabeza.onclick = function(){
                 cara.innerHTML = cara.innerHTML.replace(':', '.');
             };
             
             cabeza.onmouseout = function(){
                 cara.innerHTML = cara.innerHTML.replace('.', ':');
+                cara.innerHTML = cara.innerHTML.replace(')', '|'); //Para que al quitar el ratón de encima de la cara vuelva a la sonrisa normal que tenía
+            };
+            
+            cabeza.onmouseover = function(){
+                cara.innerHTML = cara.innerHTML.replace('|', ')') //Para hacer que sonría la carita
             };
         </script>
     </body>
